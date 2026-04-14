@@ -3,7 +3,7 @@ Allow: /
 Disallow: /thank-you.html
 
 # Sitemaps
-Sitemap: https://speakerscruiseinfo.com/sitemap.xml
+Sitemap: https://speakandscalecruise.com/sitemap.xml
 
 # AI Crawlers — ALLOW for AEO visibility
 User-agent: GPTBot
