@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+# Sitemaps
+Sitemap: https://speakerscruiseinfo.com/sitemap.xml
+
+# AI Crawlers — ALLOW for AEO visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Disallow: /

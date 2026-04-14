@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're In — Sail to Speak &amp; Scale&trade; 2027 | Deposit Confirmed</title>
+  <meta name="description" content="Your deposit is confirmed. Welcome aboard the Sail to Speak &amp; Scale 2027 speakers cruise experience. October 24–31, 2027, Athens to Barcelona.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://speakerscruiseinfo.com/thank-you.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="You're In — Sail to Speak &amp; Scale 2027">
+  <meta property="og:description" content="Your deposit is confirmed. Welcome aboard the speakers cruise experience.">
+  <meta property="og:image" content="https://speakerscruiseinfo.com/assets/images/scarlet-lady-hero.jpg">
+  <meta property="og:url" content="https://speakerscruiseinfo.com/thank-you.html">
+  <meta property="og:site_name" content="Sail to Speak &amp; Scale">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Thank You Page Specific */
+    .ty-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .ty-hero {
+      position: relative;
+      padding: 120px 0 80px;
+      background: var(--deep-purple);
+      text-align: center;
+      overflow: hidden;
+    }
+    .ty-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/images/hero-cruise-ship.jpg');
+      background-size: cover;
+      background-position: center 40%;
+      opacity: 0.25;
+    }
+    .ty-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(27, 12, 61, 0.5) 0%,
+        rgba(27, 12, 61, 0.85) 100%
+      );
+    }
+    .ty-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .ty-checkmark {
+      width: 80px;
+      height: 80px;
+      border: 3px solid var(--teal);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .ty-checkmark svg {
+      width: 40px;
+      height: 40px;
+      color: var(--teal);
+    }
+    .ty-hero h1 {
+      color: var(--cream);
+      font-size: clamp(32px, 5vw, 56px);
+      margin-bottom: 16px;
+    }
+    .ty-hero .ty-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: clamp(16px, 2vw, 22px);
+      color: var(--teal);
+      margin-bottom: 24px;
+    }
+    .ty-hero .ty-message {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: clamp(15px, 1.8vw, 18px);
+      color: rgba(255, 255, 250, 0.8);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* What Happens Next */
+    .ty-next {
+      background: var(--cream);
+      padding: var(--section-pad) 0;
+    }
+    .ty-next-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 48px;
+    }
+    .ty-step {
+      text-align: center;
+      padding: 0 16px;
+    }
+    .ty-step-number {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 56px;
+      color: var(--teal);
+      opacity: 0.2;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .ty-step h3 {
+      color: var(--deep-purple);
+      margin-bottom: 12px;
+    }
+    .ty-step p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted-purple);
+    }
+
+    /* Details Card */
+    .ty-details {
+      background: var(--lavender);
+      padding: var(--section-pad) 0;
+    }
+    .ty-details-card {
+      max-width: 640px;
+      margin: 48px auto 0;
+      background: var(--cream);
+      border: 2px solid var(--teal);
+      padding: 48px;
+    }
+    .ty-details-card h3 {
+      color: var(--deep-purple);
+      font-size: 20px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .ty-detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--lavender);
+      font-size: 15px;
+    }
+    .ty-detail-row:last-child {
+      border-bottom: none;
+    }
+    .ty-detail-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: var(--deep-purple);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .ty-detail-value {
+      color: var(--muted-purple);
+      text-align: right;
+    }
+
+    /* Closing */
+    .ty-close {
+      background: var(--deep-purple);
+      padding: var(--section-pad) 0;
+      text-align: center;
+      position: relative;
+    }
+    .ty-close::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.02;
+      pointer-events: none;
+    }
+    .ty-close .container {
+      position: relative;
+      z-index: 1;
+    }
+    .ty-close h2 {
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+    .ty-close p {
+      color: rgba(255, 255, 250, 0.7);
+      max-width: 480px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    .ty-close .btn-primary {
+      margin-top: 36px;
+    }
+    .ty-close .cta-micro {
+      color: rgba(255, 255, 250, 0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .ty-hero {
+        padding: 80px 0 60px;
+      }
+      .ty-next-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ty-details-card {
+        padding: 32px 24px;
+      }
+      .ty-detail-row {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .ty-detail-value {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body class="ty-page">
+
+  <!-- Hero Confirmation -->
+  <section class="ty-hero">
+    <div class="container">
+      <div class="ty-checkmark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h1>You&rsquo;re In.</h1>
+      <p class="ty-subtitle">Your spot on the Sail to Speak &amp; Scale&trade; 2027 experience is secured.</p>
+      <p class="ty-message">Your $400 deposit has been received. You&rsquo;ll receive a confirmation email shortly with your receipt and next steps. Welcome aboard.</p>
+    </div>
+  </section>
+
+  <!-- What Happens Next -->
+  <section class="ty-next light-section">
+    <div class="container" style="text-align: center;">
+      <p class="section-label">What Happens Next</p>
+      <h2>Here&rsquo;s What to Expect</h2>
+      <hr class="heading-rule" style="margin-left: auto; margin-right: auto;">
+      <div class="ty-next-grid">
+        <div class="ty-step">
+          <div class="ty-step-number">01</div>
+          <h3>Confirmation Email</h3>
+          <p>Check your inbox for your deposit receipt and a welcome message from our team.</p>
+        </div>
+        <div class="ty-step">
+          <div class="ty-step-number">02</div>
+          <h3>Cabin Selection Opens</h3>
+          <p>When full pricing is released (by April 30, 2027), you&rsquo;ll get first access to choose your cabin as an early depositor.</p>
+        </div>
+        <div class="ty-step">
+          <div class="ty-step-number">03</div>
+          <h3>Pre-Event Details</h3>
+          <p>As we get closer to October, you&rsquo;ll receive itinerary details, speaker prep materials, and everything you need to get ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your Trip Details -->
+  <section class="ty-details light-section">
+    <div class="container" style="text-align: center;">
+      <p class="section-label">Your Trip At a Glance</p>
+      <h2>Save These Details</h2>
+      <hr class="heading-rule" style="margin-left: auto; margin-right: auto;">
+      <div class="ty-details-card">
+        <h3>Sail to Speak &amp; Scale&trade; 2027</h3>
+        <div class="ty-detail-row">
+          <span class="ty-detail-label">Dates</span>
+          <span class="ty-detail-value">October 24&ndash;31, 2027</span>
+        </div>
+        <div class="ty-detail-row">
+          <span class="ty-detail-label">Route</span>
+          <span class="ty-detail-value">Athens &rarr; Barcelona</span>
+        </div>
+        <div class="ty-detail-row">
+          <span class="ty-detail-label">Ship</span>
+          <span class="ty-detail-value">Virgin Voyages Scarlet Lady</span>
+        </div>
+        <div class="ty-detail-row">
+          <span class="ty-detail-label">Deposit</span>
+          <span class="ty-detail-value">$400 (fully refundable)</span>
+        </div>
+        <div class="ty-detail-row">
+          <span class="ty-detail-label">Early Bonus</span>
+          <span class="ty-detail-value">$200 onboard credit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="ty-close dark-section">
+    <div class="container">
+      <h2>The Journey Starts Now</h2>
+      <p>While you wait for the full details, share the news. Tell your audience you&rsquo;re going international. The momentum starts the moment you decide.</p>
+      <a href="index.html" class="btn-primary" style="margin-top: 36px;">Back to Sail to Speak &amp; Scale</a>
+    </div>
+  </section>
+
+</body>
+</html>

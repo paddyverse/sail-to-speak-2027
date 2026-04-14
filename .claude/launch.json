@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sail-to-speak",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Volumes/Anomoly/clients/Authority Client/Sail To Speak", "-l", "3847"],
+      "port": 3847
+    }
+  ]
+}
